@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 
 import State from '../store'
 import Scene from './scene'
+import Overlay from './overlay'
 
 function Layout({ children }: { children: React.ReactNode }) {
   const _setHomeCamera = State((state) => state.setHomeCamera)
@@ -40,6 +41,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       <div className='absolute h-full w-full'>
         <Scene />
       </div>
+      <Overlay />
       <div className='pointer-events-none absolute h-full w-full'>
         {children}
       </div>

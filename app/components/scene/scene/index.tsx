@@ -94,8 +94,8 @@ export default function App() {
           height={200}
         /> */}
         <Bloom luminanceThreshold={0.5} mipmapBlur />
-        <Bloom luminanceThreshold={1} intensity={10} levels={9} mipmapBlur />
-        <Bloom luminanceThreshold={1.5} intensity={5} levels={8} mipmapBlur />
+        <Bloom luminanceThreshold={1} intensity={10} mipmapBlur />
+        <Bloom luminanceThreshold={1.5} intensity={5} mipmapBlur />
         <Noise opacity={0.025} />
       </EffectComposer>
     </>
