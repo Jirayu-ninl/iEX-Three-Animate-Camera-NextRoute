@@ -21,7 +21,7 @@ type GLTFResult = GLTF & {
 }
 
 export default function Model(
-  props: JSX.IntrinsicElements['group'] & { _dark: boolean }
+  props: JSX.IntrinsicElements['group'] & { _dark?: boolean }
 ) {
   const { nodes, materials } = useGLTF(
     '/models/cubeOnly.glb'
