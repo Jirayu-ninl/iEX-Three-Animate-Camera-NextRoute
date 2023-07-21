@@ -1,4 +1,4 @@
-import { DoubleSide } from 'three'
+import { DoubleSide, Color } from 'three'
 import { Grid, Instance, Instances } from '@react-three/drei'
 
 const FloorGrid = ({
@@ -20,7 +20,7 @@ const FloorGrid = ({
       <Instances position={[0, positionY, 0]}>
         <planeGeometry args={[lineWidth, height]} />
         <meshBasicMaterial
-          color={accentColor}
+          color={new Color(0.2, 2, 1)}
           toneMapped={false}
           side={DoubleSide}
         />
@@ -37,7 +37,7 @@ const FloorGrid = ({
               <Instance rotation={[-Math.PI / 2, 0, 0]} />
               <Instance rotation={[-Math.PI / 2, 0, Math.PI / 2]} />
             </group>
-          )),
+          ))
         )}
         {/* <gridHelper
             args={[100, 100, gridColor, gridColor]}
