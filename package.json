@@ -1,12 +1,16 @@
 {
   "name": "theiceji-three-animate-camera",
   "version": "0.1.0",
+  "homepage": "https://Jirayu-ninl.github.io/iEX-Three-Animate-Camera-NextRoute",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "lint": "next lint",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/css": "^11.11.0",
@@ -51,6 +55,7 @@
     "autoprefixer": "^10.4.14",
     "babel-plugin-glsl": "^1.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "glslify": "^7.1.1",
     "glslify-loader": "^2.0.0",
     "next-compose-plugins": "^2.2.1",
