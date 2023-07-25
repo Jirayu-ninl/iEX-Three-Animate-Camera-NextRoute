@@ -1,4 +1,6 @@
-https://Jirayu-ninl.github.io/iEX-Three-Animate-Camera-NextRoute/
+![alt text](https://github.com/Jirayu-ninl/iEX-Three-Animate-Camera-NextRoute/blob/main/public/preview.png?raw=true)
+
+https://theiceji-three-next-001.netlify.app
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
